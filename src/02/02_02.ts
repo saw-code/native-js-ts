@@ -7,13 +7,13 @@ type AddressType = {
   street: StreetType
 }
 
-type HouseType = {
+export type HouseType = {
   buildedAt: number
   repaired: boolean
   address: AddressType
 }
 
-type GovernmentBuildingType = {
+export type GovernmentBuildingType = {
   type: "HOSPITAL" | "FIRE-STATION"
   budget: number
   staffCount: number
