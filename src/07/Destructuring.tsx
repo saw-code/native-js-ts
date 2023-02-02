@@ -17,16 +17,16 @@ type PropsType = {
 }
 
 export const ManComponent: React.FC<PropsType> = (props) => {
-  const {title} = props
-  const {name} = props.man
-
+  // const {title} = props
+  // const {name} = props.man
+const {title, man} = props
   const [message, setMessage] = useState<string>("hello")
 
   return <div>
     <h1>{title}</h1>
     <hr/>
     <div>
-      {name}
+      {man.name}
     </div>
   </div>
 }
