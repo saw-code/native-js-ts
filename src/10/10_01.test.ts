@@ -198,5 +198,4 @@ test("update company", () => {
   expect(copyUser["DimOk"]).not.toBe(companies["DimOk"])
   expect(copyUser["Peppito"]).toBe(companies["Peppito"])
   expect(copyUser["DimOk"][0].title).toBe("IKPK")
-
 })
