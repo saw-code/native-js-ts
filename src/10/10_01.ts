@@ -22,3 +22,9 @@ export const moveUser = (u: UserWithLaptopType, city: string, house: number) => 
     ...u, address: {...u.address, city, house}
   }
 }
+
+export const upgradeUserLaptop = (u: UserWithLaptopType, laptop: string) => {
+  return {
+    ...u, laptop: {...u.laptop, title: laptop}
+  }
+}
